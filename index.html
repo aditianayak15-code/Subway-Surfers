@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Surfers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="game">
+
+    <!-- HUD -->
+    <div id="hud">
+        <div class="hudBox">🏆 <span id="score">0</span></div>
+        <div class="hudBox">🪙 <span id="coinCount">0</span></div>
+        <div class="hudBox">❤️ <span id="lives">3</span></div>
+    </div>
+
+    <!-- Character Selection -->
+    <div id="characterScreen">
+
+        <h1>SUBWAY SURFERS</h1>
+        <h2>SELECT YOUR RUNNER</h2>
+
+        <div class="characterSelector">
+
+            <button id="previousCharacter" class="arrow">❮</button>
+
+            <div class="characterCard">
+
+                <div id="previewCharacter"></div>
+
+                <h2 id="characterName">KAI</h2>
+
+                <div class="stats">
+                    <p>⚡ Speed <span id="speedStars">★★★★☆</span></p>
+                    <p>⬆ Jump <span id="jumpStars">★★★★☆</span></p>
+                    <p>↔ Agility <span id="agilityStars">★★★★☆</span></p>
+                </div>
+
+                <button id="selectCharacter">
+                    SELECT
+                </button>
+
+            </div>
+
+            <button id="nextCharacter" class="arrow">❯</button>
+
+        </div>
+
+        <div id="characterDots">
+            ● ○ ○ ○ ○
+        </div>
+
+    </div>
+
+
+    <!-- Start Screen -->
+
+    <div id="startScreen" class="hidden overlay">
+
+        <h1>READY TO RUN?</h1>
+
+        <p id="selectedText">
+            Runner selected
+        </p>
+
+        <button id="startButton">
+            START RUN
+        </button>
+
+        <div class="controls">
+            <p>← → Change Lane</p>
+            <p>↑ Jump</p>
+            <p>↓ Slide</p>
+        </div>
+
+    </div>
+
+
+    <!-- Game Over -->
+
+    <div id="gameOver" class="hidden overlay">
+
+        <h1>RUN OVER</h1>
+
+        <p>
+            Score:
+            <strong id="finalScore">0</strong>
+        </p>
+
+        <p>
+            Coins:
+            <strong id="finalCoins">0</strong>
+        </p>
+
+        <button id="restartButton">
+            RUN AGAIN
+        </button>
+
+        <button id="characterButton">
+            CHANGE CHARACTER
+        </button>
+
+    </div>
+
+
+    <!-- Mobile Controls -->
+
+    <div id="mobileControls">
+
+        <button id="leftButton">←</button>
+
+        <button id="jumpButton">↑</button>
+
+        <button id="slideButton">↓</button>
+
+        <button id="rightButton">→</button>
+
+    </div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
